@@ -14,8 +14,6 @@ async function main() {
             headers: {
                 "Content-type": "application/json"
             }
-        }).then(v => v.text()).then((v) => {
-            d = ""
         })
 
     })
