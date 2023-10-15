@@ -16,10 +16,14 @@
     "ansi-html": "^0.0.9",
     "ansi-to-html": "^0.7.2",
     "ansi_up": "^6.0.2",
+    "cross-fetch": "^4.0.0",
+    "jotai": "^2.4.3",
     "lodash": "^4.17.21",
     "next": "13.5.4",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "socket.io-client": "^4.7.2",
+    "web-streams-polyfill": "^3.2.1"
   },
   "devDependencies": {
     "@types/node": "^20",

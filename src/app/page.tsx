@@ -1,15 +1,17 @@
 import Image from 'next/image'
 import { fun_list_project } from './app_modules/projects/fun/list_projects'
-import { Box, Flex, Paper, ScrollArea, SimpleGrid, Stack, Text, Title } from '@mantine/core'
+import { Box, Button, Flex, Paper, ScrollArea, SimpleGrid, Stack, Text, Title } from '@mantine/core'
 import { fun_pm2_jslist } from './app_modules/projects/fun/pm2_jlist'
 import _ from 'lodash'
 import ViewHtop from './app_modules/projects/view/htop'
+import WidgetIo from './app_modules/io'
 
 export default async function Home() {
   const list_projects = await fun_list_project()
   const j_ststus = await fun_pm2_jslist()
   return (
     <>
+      <WidgetIo />
       <Stack bg={"dark"} p={"md"} >
         <Stack c={"green"} gap={0} >
           <Title >BIP-MONITOR</Title>
