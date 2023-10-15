@@ -8,19 +8,19 @@ async function main() {
         d += data
         await new Promise(r => setTimeout(r, 10000))
 
-        fetch('https://io.wibudev.com/io', {
-            method: "POST",
-            body: JSON.stringify({
-                id: "monit",
-                path: "/htop",
-                data: html(d)
-            }),
-            headers: {
-                "Content-type": "application/json"
-            }
-        }).then(v => v.text()).then((v) => {
-            d = ""
-        })
+        // fetch('https://io.wibudev.com/io', {
+        //     method: "POST",
+        //     body: JSON.stringify({
+        //         id: "monit",
+        //         path: "/htop",
+        //         data: html(d)
+        //     }),
+        //     headers: {
+        //         "Content-type": "application/json"
+        //     }
+        // }).then(v => v.text()).then((v) => {
+        //     d = ""
+        // })
     })
 }
 
