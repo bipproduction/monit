@@ -5,6 +5,7 @@ import io from 'socket.io-client'
 import { _val_htop } from "../val/htop"
 const socket = io("https://io.wibudev.com")
 
+
 export default function WidgetIo() {
     const [htop, setHtop] = useAtom(_val_htop)
     useShallowEffect(() => {
@@ -14,6 +15,7 @@ export default function WidgetIo() {
             }
         })
     }, [])
+    // data
 
     return <></>
 }

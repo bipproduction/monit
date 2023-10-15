@@ -3,7 +3,7 @@ case $1 in
     -p|--push)
         git add -A
         git commit -m "auto"
-        git push origin main
+        git push origin build
     ;;
     *)
         echo "
