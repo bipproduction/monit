@@ -9,7 +9,7 @@ export default function WidgetIo() {
     const [htop, setHtop] = useAtom(_val_htop)
     useShallowEffect(() => {
         socket.on('io', (data) => {
-            if (data && data.id === "monit") {
+            if (data && data.id === "monit" && data.path === "/htop") {
                 setHtop(data.data)
             }
         })
