@@ -6,7 +6,7 @@ async function main() {
     let d = "";
     child.stdout.on('data', async (data) => {
         d += data
-        await new Promise(r => setTimeout(r, 5000))
+        await new Promise(r => setTimeout(r, 10000))
         fetch('https://io.wibudev.com/io', {
             method: "POST",
             body: JSON.stringify({
