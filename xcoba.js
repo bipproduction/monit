@@ -3,9 +3,11 @@ const fs = require('fs')
 const html = require('ansi-html')
 
 const c = exec('htop')
-c.stdout.on("data", async(data, qa) => {
+c.stdout.on("data", async (data) => {
 
-    fs.writeFileSync('x.txt', data, "utf-8")
+    setTimeout(() => {
+        console.log(data)
+    }, 10000)
 })
 
 // const c = execSync('pm2 logs')
