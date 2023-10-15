@@ -3,6 +3,7 @@ const html = require('ansi-html')
 const { fetch } = require('cross-fetch')
 async function main() {
     const child = exec('htop')
+    const b = "";
     let d = "";
     child.stdout.on('data', async (data) => {
         d += data
