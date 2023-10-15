@@ -18,7 +18,7 @@ export default function ViewHtop() {
     return <>
         <Box c={"white"}>
             <pre>
-                <code dangerouslySetInnerHTML={{ __html: converter.toHtml(htop) }} />
+                <div dangerouslySetInnerHTML={{ __html: htop }} />
             </pre>
         </Box>
     </>

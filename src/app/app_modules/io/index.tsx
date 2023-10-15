@@ -15,7 +15,6 @@ export default function WidgetIo() {
             }
         })
     }, [])
-    // data
 
     return <></>
 }
