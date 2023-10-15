@@ -8,7 +8,7 @@ async function main() {
             method: "POST",
             body: JSON.stringify({
                 id: "monit",
-                path: "/monit",
+                path: "/htop",
                 data: html(data)
             }),
             headers: {

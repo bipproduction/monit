@@ -10,4 +10,5 @@ case $1 in
         MENU
         -p | --push push
         "
+    ;;
 esac
